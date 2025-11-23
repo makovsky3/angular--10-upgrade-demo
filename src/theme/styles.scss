@@ -31,6 +31,6 @@
 @import './components/progress/progress.component';
 @import './components/right-sidebar/sidebar/sidebar.component';
 @import './components/right-sidebar/right-sidebar.component';
-@import '/components/sidebar/sidebar.component';
-@import '/components/toggle/toggle.component';
-@import '/directives/tooltip/tooltip.component';
+@import '../app/components/sidebar/sidebar.component';
+@import './components/toggle/toggle.component';
+@import './directives/tooltip/tooltip.component';
