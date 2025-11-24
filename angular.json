@@ -78,6 +78,24 @@
           "options": {
             "buildTarget": "material-angular-dashboard:build"
           }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "src/tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
+            "styles": [
+              "src/theme/styles.scss"
+            ],
+            "scripts": [
+              "node_modules/d3/d3.min.js",
+              "node_modules/nvd3/build/nv.d3.min.js"
+            ],
+            "assets": [
+              "src/assets"
+            ]
+          }
         }
       }
     },
