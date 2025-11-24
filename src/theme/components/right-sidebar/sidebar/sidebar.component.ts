@@ -1,9 +1,10 @@
 import { Component, EventEmitter, HostBinding, Input, Output } from '@angular/core';
 
 @Component({
-  selector: 'base-right-sidebar',
-  styleUrls: ['./sidebar.component.scss'],
-  templateUrl: './sidebar.component.html',
+    selector: 'base-right-sidebar',
+    styleUrls: ['./sidebar.component.scss'],
+    templateUrl: './sidebar.component.html',
+    standalone: false
 })
 export class RightSidebarComponent {
   @Input() public title;

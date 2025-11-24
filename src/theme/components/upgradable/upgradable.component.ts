@@ -1,7 +1,8 @@
 import { AfterViewInit, Component } from '@angular/core';
 
 @Component({
-  template: '',
+    template: '',
+    standalone: false
 })
 export abstract class UpgradableComponent implements AfterViewInit {
   public ngAfterViewInit() {

@@ -6,10 +6,11 @@ import { Component, ElementRef, HostBinding, OnInit } from '@angular/core';
 import { DiscreteBarChartService } from './discrete-bar-chart.service';
 
 @Component({
-  selector: 'app-discrete-bar-chart',
-  styleUrls: ['./discrete-bar-chart.component.scss'],
-  template: ``,
-  providers: [DiscreteBarChartService],
+    selector: 'app-discrete-bar-chart',
+    styleUrls: ['./discrete-bar-chart.component.scss'],
+    template: ``,
+    providers: [DiscreteBarChartService],
+    standalone: false
 })
 export class DiscreteBarChartComponent implements OnInit {
   @HostBinding('class.discrete-bar-chart__container') public readonly discreteBarChartContainer = true;

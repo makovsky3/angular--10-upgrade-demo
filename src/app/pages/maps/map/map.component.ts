@@ -4,9 +4,10 @@ import { UpgradableComponent } from 'theme/components/upgradable';
 declare const google: any;
 
 @Component({
-  selector: 'app-map',
-  styleUrls: ['./map.component.scss'],
-  templateUrl: 'map.component.html',
+    selector: 'app-map',
+    styleUrls: ['./map.component.scss'],
+    templateUrl: 'map.component.html',
+    standalone: false
 })
 export class MapComponent extends UpgradableComponent implements AfterViewInit {
   @HostBinding('class.mdl-grid') public readonly mdlGrid = true;

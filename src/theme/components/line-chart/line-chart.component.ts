@@ -4,7 +4,8 @@ import * as nv from 'nvd3';
 import { AfterViewInit, Component, ElementRef, HostBinding } from '@angular/core';
 
 @Component({
-  template: '',
+    template: '',
+    standalone: false
 })
 export abstract class LineChartComponent implements AfterViewInit {
   protected animatedData;

@@ -8,10 +8,11 @@ import { PieChartComponent as BasePieChartComponent } from 'theme/components/pie
 import { BrowserStatisticsChartService } from './browser-statistics-chart.service';
 
 @Component({
-  selector: 'app-browser-statistics-chart',
-  styleUrls: ['../../../../theme/components/pie-chart/pie-chart.component.scss'],
-  template: ``,
-  providers: [BrowserStatisticsChartService],
+    selector: 'app-browser-statistics-chart',
+    styleUrls: ['../../../../theme/components/pie-chart/pie-chart.component.scss'],
+    template: ``,
+    providers: [BrowserStatisticsChartService],
+    standalone: false
 })
 export class BrowserStatisticsChartComponent extends BasePieChartComponent implements OnInit {
   constructor(

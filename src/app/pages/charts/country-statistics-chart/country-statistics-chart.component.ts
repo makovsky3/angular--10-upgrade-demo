@@ -8,10 +8,11 @@ import { PieChartComponent as BasePieChartComponent } from 'theme/components/pie
 import { CountryStatisticsChartService } from './country-statistics-chart.service';
 
 @Component({
-  selector: 'app-country-statistics-chart',
-  styleUrls: ['../../../../theme/components/pie-chart/pie-chart.component.scss'],
-  template: ``,
-  providers: [CountryStatisticsChartService],
+    selector: 'app-country-statistics-chart',
+    styleUrls: ['../../../../theme/components/pie-chart/pie-chart.component.scss'],
+    template: ``,
+    providers: [CountryStatisticsChartService],
+    standalone: false
 })
 export class CountryStatisticsChartComponent extends BasePieChartComponent implements OnInit {
   constructor(

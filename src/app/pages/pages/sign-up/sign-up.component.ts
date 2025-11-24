@@ -7,9 +7,10 @@ import { AuthService } from '@services/*';
 import { BlankLayoutCardComponent } from 'app/components/blank-layout-card';
 
 @Component({
-  selector: 'app-sign-up',
-  styleUrls: ['../../../components/blank-layout-card/blank-layout-card.component.scss'],
-  templateUrl: './sign-up.component.html',
+    selector: 'app-sign-up',
+    styleUrls: ['../../../components/blank-layout-card/blank-layout-card.component.scss'],
+    templateUrl: './sign-up.component.html',
+    standalone: false
 })
 export class SignUpComponent extends BlankLayoutCardComponent implements OnInit {
 

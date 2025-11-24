@@ -4,7 +4,8 @@ import * as nv from 'nvd3';
 import { Component, HostBinding } from '@angular/core';
 
 @Component({
-  template: '',
+    template: '',
+    standalone: false
 })
 export abstract class PieChartComponent {
   @HostBinding('class.pie-chart__container') private readonly pieChartContainer = true;

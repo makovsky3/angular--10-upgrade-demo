@@ -3,9 +3,10 @@ import { Component, HostBinding } from '@angular/core';
 import { UpgradableComponent } from 'theme/components/upgradable';
 
 @Component({
-  selector: 'app-icons',
-  templateUrl: './icons.component.html',
-  styleUrls: ['./icons.component.scss'],
+    selector: 'app-icons',
+    templateUrl: './icons.component.html',
+    styleUrls: ['./icons.component.scss'],
+    standalone: false
 })
 export class IconsComponent extends UpgradableComponent {
   @HostBinding('class.mdl-grid') public readonly mdlGrid = true;

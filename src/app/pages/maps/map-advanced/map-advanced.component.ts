@@ -21,9 +21,10 @@ const switchZoomValue = 5;
 const iconSize = 20;
 
 @Component({
-  selector: 'app-map-advanced',
-  styleUrls: ['./map-advanced.component.scss'],
-  templateUrl: './map-advanced.component.html',
+    selector: 'app-map-advanced',
+    styleUrls: ['./map-advanced.component.scss'],
+    templateUrl: './map-advanced.component.html',
+    standalone: false
 })
 export class MapAdvancedComponent extends UpgradableComponent implements AfterViewInit, OnDestroy {
   @HostBinding('class.map-advanced') public map = true;

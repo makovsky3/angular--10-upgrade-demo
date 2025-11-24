@@ -6,10 +6,11 @@ import { Component, ElementRef, HostBinding, OnInit } from '@angular/core';
 import { LinePlusBarChartService } from './line-plus-bar-chart.service';
 
 @Component({
-  selector: 'app-line-plus-bar-chart',
-  styleUrls: ['./line-plus-bar-chart.component.scss'],
-  template: ``,
-  providers: [LinePlusBarChartService],
+    selector: 'app-line-plus-bar-chart',
+    styleUrls: ['./line-plus-bar-chart.component.scss'],
+    template: ``,
+    providers: [LinePlusBarChartService],
+    standalone: false
 })
 export class LinePlusBarChartComponent implements OnInit {
   @HostBinding('class.line-plus-bar-chart__container') public readonly linePlusBarChartContainer = true;

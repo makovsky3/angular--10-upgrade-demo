@@ -5,10 +5,11 @@ import { LineChartComponent } from 'theme/components/line-chart';
 import { LineChart1Service } from './line-chart-1.service';
 
 @Component({
-  selector: 'app-line-chart-1',
-  styleUrls: ['../../../../theme/components/line-chart/line-chart.component.scss'],
-  template: ``,
-  providers: [LineChart1Service],
+    selector: 'app-line-chart-1',
+    styleUrls: ['../../../../theme/components/line-chart/line-chart.component.scss'],
+    template: ``,
+    providers: [LineChart1Service],
+    standalone: false
 })
 export class LineChart1Component extends LineChartComponent {
   constructor(

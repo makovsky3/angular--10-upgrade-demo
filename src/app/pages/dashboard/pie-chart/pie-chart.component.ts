@@ -8,10 +8,11 @@ import { PieChartComponent as BasePieChartComponent } from 'theme/components/pie
 import { PieChartService } from './pie-chart.service';
 
 @Component({
-  selector: 'app-pie-chart',
-  styleUrls: ['../../../../theme/components/pie-chart/pie-chart.component.scss'],
-  template: ``,
-  providers: [PieChartService],
+    selector: 'app-pie-chart',
+    styleUrls: ['../../../../theme/components/pie-chart/pie-chart.component.scss'],
+    template: ``,
+    providers: [PieChartService],
+    standalone: false
 })
 export class PieChartComponent extends BasePieChartComponent implements OnInit {
   constructor(

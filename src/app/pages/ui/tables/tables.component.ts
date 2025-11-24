@@ -4,9 +4,10 @@ import { UpgradableComponent } from 'theme/components/upgradable';
 import { TablesService } from './tables.service';
 
 @Component({
-  selector: 'app-tables',
-  templateUrl: './tables.component.html',
-  styleUrls: ['./tables.component.scss'],
+    selector: 'app-tables',
+    templateUrl: './tables.component.html',
+    styleUrls: ['./tables.component.scss'],
+    standalone: false
 })
 export class TablesComponent extends UpgradableComponent {
   public readonly Array = Array;

@@ -2,9 +2,9 @@ import { Component, HostListener, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'base-menu-link-item',
-  styleUrls: ['./sidebar.component.scss'],
-  template: `
+    selector: 'base-menu-link-item',
+    styleUrls: ['./sidebar.component.scss'],
+    template: `
     <a
       *ngIf="data.link"
       class="mdl-navigation__link"
@@ -22,6 +22,7 @@ import { Router } from '@angular/router';
       {{ data.name }}
     </a>
   `,
+    standalone: false
 })
 export class MenuLinkItemComponent {
   @Input() public data;

@@ -1,9 +1,10 @@
 import { Component, HostBinding, Input } from '@angular/core';
 
 @Component({
-  selector: 'base-tooltip',
-  styleUrls: ['./tooltip.component.scss'],
-  template: ``,
+    selector: 'base-tooltip',
+    styleUrls: ['./tooltip.component.scss'],
+    template: ``,
+    standalone: false
 })
 export class TooltipComponent {
   @HostBinding('innerHTML') @Input() public content;

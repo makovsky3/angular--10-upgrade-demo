@@ -3,12 +3,13 @@ import { Component, HostBinding, Input } from '@angular/core';
 import { ToggleComponent } from 'theme/components/toggle/toggle.component';
 
 @Component({
-  selector: 'label[baseRadioButton]',
-  styleUrls: ['../toggle/toggle.component.scss'],
-  template: `
+    selector: 'label[baseRadioButton]',
+    styleUrls: ['../toggle/toggle.component.scss'],
+    template: `
     <input type="radio" [id]="innerID" class="mdl-radio__button" [name]="name" [value]="value" [(ngModel)]="isChecked" [checked]="isChecked">
     <span class="mdl-radio__label"><ng-content></ng-content></span>
   `,
+    standalone: false
 })
 export class RadioButtonComponent extends ToggleComponent {
   @Input() public name;

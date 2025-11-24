@@ -6,9 +6,10 @@ import { BlankLayoutCardComponent } from 'app/components/blank-layout-card';
 import { AuthService } from '../../../services/auth';
 
 @Component({
-  selector: 'app-login',
-  styleUrls: ['../../../components/blank-layout-card/blank-layout-card.component.scss'],
-  templateUrl: './login.component.html',
+    selector: 'app-login',
+    styleUrls: ['../../../components/blank-layout-card/blank-layout-card.component.scss'],
+    templateUrl: './login.component.html',
+    standalone: false
 })
 export class LoginComponent extends BlankLayoutCardComponent implements OnInit {
   public loginForm: UntypedFormGroup;

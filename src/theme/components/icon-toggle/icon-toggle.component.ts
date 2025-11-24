@@ -3,12 +3,13 @@ import { Component, HostBinding, Input } from '@angular/core';
 import { ToggleComponent } from 'theme/components/toggle/toggle.component';
 
 @Component({
-  selector: 'label[baseIconToggle]',
-  styleUrls: ['../toggle/toggle.component.scss'],
-  template: `
+    selector: 'label[baseIconToggle]',
+    styleUrls: ['../toggle/toggle.component.scss'],
+    template: `
     <input type="checkbox" [id]="innerID" class="mdl-icon-toggle__input" [checked]="isChecked" (change)="isChecked = !isChecked">
     <i class="mdl-icon-toggle__label material-icons"><ng-content></ng-content></i>
   `,
+    standalone: false
 })
 export class IconToggleComponent extends ToggleComponent {
   @HostBinding('class') private get className() {
