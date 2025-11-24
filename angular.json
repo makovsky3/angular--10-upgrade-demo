@@ -81,7 +81,6 @@
       "projectType": "application"
     }
   },
-  "defaultProject": "material-angular-dashboard",
   "cli": {
     "packageManager": "npm"
   },

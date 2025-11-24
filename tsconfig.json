@@ -9,7 +9,7 @@
     "module": "esnext",
     "experimentalDecorators": true,
     "downlevelIteration": true,
-    "target": "es5",
+    "target": "es2020",
     "typeRoots": [
       "node_modules/@types"
     ],
