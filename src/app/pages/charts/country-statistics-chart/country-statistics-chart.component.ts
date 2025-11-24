@@ -1,5 +1,5 @@
-import * as d3 from 'd3';
-import * as nv from 'nvd3';
+declare const d3: any;
+declare const nv: any;
 
 import { Component, ElementRef, OnInit } from '@angular/core';
 
