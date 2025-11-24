@@ -5,18 +5,15 @@ import { TooltipComponent } from './tooltip.component';
 import { TooltipDirective } from './tooltip.directive';
 
 @NgModule({
-  imports: [
-    CommonModule,
-  ],
-  declarations: [
-    TooltipComponent,
-    TooltipDirective,
-  ],
-  exports: [
-    TooltipDirective,
-  ],
-  entryComponents: [
-    TooltipComponent,
-  ],
+    imports: [
+        CommonModule,
+    ],
+    declarations: [
+        TooltipComponent,
+        TooltipDirective,
+    ],
+    exports: [
+        TooltipDirective,
+    ]
 })
 export class TooltipModule { }
