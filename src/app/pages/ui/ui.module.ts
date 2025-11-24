@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { MaterialAngularSelectModule } from 'material-angular-select';
+// TODO: MaterialAngularSelectModule is not compatible with Angular 19 (Ivy)
+// import { MaterialAngularSelectModule } from 'material-angular-select';
 
 import { ThemeModule } from 'theme';
 
@@ -19,7 +20,7 @@ import { UIRoutingModule } from './ui-routing.module';
     CommonModule,
     UIRoutingModule,
     ThemeModule,
-    MaterialAngularSelectModule,
+    // MaterialAngularSelectModule, // Commented out - not compatible with Angular 19
     RightSidebarModule,
   ],
   declarations: [
