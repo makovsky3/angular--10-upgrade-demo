@@ -27,9 +27,7 @@
             "styles": [
               "src/theme/styles.scss"
             ],
-            "scripts": [
-              "node_modules/material-design-lite/material.js"
-            ],
+            "scripts": [],
             "vendorChunk": true,
             "extractLicenses": false,
             "buildOptimizer": false,
