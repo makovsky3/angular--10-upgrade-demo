@@ -1,9 +1,10 @@
 import { Component, HostBinding, Input, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'base-card base-card-title',
-  styleUrls: ['./card.component.scss'],
-  template: `<ng-content></ng-content>`,
+    selector: 'base-card base-card-title',
+    styleUrls: ['./card.component.scss'],
+    template: `<ng-content></ng-content>`,
+    standalone: false
 })
 export class CardTitleComponent {
   @HostBinding('class.mdl-card__title') private readonly mdlCardTitle = true;

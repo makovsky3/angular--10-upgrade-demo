@@ -1,5 +1,5 @@
-import * as d3 from 'd3';
-import * as nv from 'nvd3';
+declare const d3: any;
+declare const nv: any;
 
 import { Component, ElementRef, OnInit } from '@angular/core';
 
@@ -8,10 +8,11 @@ import { PieChartComponent as BasePieChartComponent } from 'theme/components/pie
 import { CountryStatisticsChartService } from './country-statistics-chart.service';
 
 @Component({
-  selector: 'app-country-statistics-chart',
-  styleUrls: ['../../../../theme/components/pie-chart/pie-chart.component.scss'],
-  template: ``,
-  providers: [CountryStatisticsChartService],
+    selector: 'app-country-statistics-chart',
+    styleUrls: ['../../../../theme/components/pie-chart/pie-chart.component.scss'],
+    template: ``,
+    providers: [CountryStatisticsChartService],
+    standalone: false
 })
 export class CountryStatisticsChartComponent extends BasePieChartComponent implements OnInit {
   constructor(

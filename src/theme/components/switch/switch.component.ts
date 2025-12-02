@@ -3,12 +3,13 @@ import { Component, HostBinding, Input } from '@angular/core';
 import { ToggleComponent } from 'theme/components/toggle/toggle.component';
 
 @Component({
-  selector: 'label[baseSwitch]',
-  styleUrls: ['../toggle/toggle.component.scss'],
-  template: `
+    selector: 'label[baseSwitch]',
+    styleUrls: ['../toggle/toggle.component.scss'],
+    template: `
     <input type="checkbox" [id]="innerID" class="mdl-switch__input" [checked]="isChecked" (change)="isChecked = !isChecked">
     <span class="mdl-switch__label"><ng-content></ng-content></span>
   `,
+    standalone: false
 })
 export class SwitchComponent extends ToggleComponent {
   @HostBinding('class') private get className() {

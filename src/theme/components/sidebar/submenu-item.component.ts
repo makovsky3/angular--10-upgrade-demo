@@ -2,9 +2,9 @@ import { Component, HostBinding, HostListener, Input, OnInit } from '@angular/co
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'base-submenu-item',
-  styleUrls: ['./sidebar.component.scss'],
-  template: `
+    selector: 'base-submenu-item',
+    styleUrls: ['./sidebar.component.scss'],
+    template: `
     <a class="mdl-navigation__link" [class.mdl-navigation__link--current]="shown" (click)="shown = !shown">
     <i *ngIf="data.icon" class="material-icons">{{ data.icon }}</i>{{ data.name }}<i class="material-icons">keyboard_arrow_down</i>
     </a>
@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
     <base-menu-item *ngFor="let child of data.children" [data]="child"></base-menu-item>
     </div>
   `,
+    standalone: false
 })
 export class SubmenuItemComponent implements OnInit {
   @HostBinding('class.sub-navigation') private readonly subNavigation = true;

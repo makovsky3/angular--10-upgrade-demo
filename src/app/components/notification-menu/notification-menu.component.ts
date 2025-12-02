@@ -3,10 +3,11 @@ import { Component, HostBinding } from '@angular/core';
 import { NotificationMenuService } from './notification-menu.service';
 
 @Component({
-  selector: 'app-notification-menu',
-  styleUrls: ['./notification-menu.component.scss'],
-  templateUrl: './notification-menu.component.html',
-  providers: [NotificationMenuService],
+    selector: 'app-notification-menu',
+    styleUrls: ['./notification-menu.component.scss'],
+    templateUrl: './notification-menu.component.html',
+    providers: [NotificationMenuService],
+    standalone: false
 })
 export class NotificationMenuComponent {
   @HostBinding('class.notification-menu') public readonly notificationMenu = true;

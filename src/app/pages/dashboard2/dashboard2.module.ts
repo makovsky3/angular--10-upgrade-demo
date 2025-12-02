@@ -2,7 +2,9 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { MaterialAngularSelectModule } from 'material-angular-select';
+// TODO: MaterialAngularSelectModule is not compatible with Angular 19 (Ivy)
+// This library was last updated in 2019 and needs to be replaced with a compatible alternative
+// import { MaterialAngularSelectModule } from 'material-angular-select';
 import { ThemeModule } from 'theme';
 
 import { ChartsModule } from '../charts/charts.module';
@@ -19,7 +21,7 @@ import { FiltersComponent } from './filters/filters.component';
     DashboardModule,
     MapsModule,
     ChartsModule,
-    MaterialAngularSelectModule,
+    // MaterialAngularSelectModule, // Commented out - not compatible with Angular 19
   ],
   declarations: [
     Dashboard2Component,

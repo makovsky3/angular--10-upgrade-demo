@@ -7,10 +7,9 @@
     "declaration": false,
     "moduleResolution": "node",
     "module": "esnext",
-    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "downlevelIteration": true,
-    "target": "es5",
+    "target": "ES2022",
     "typeRoots": [
       "node_modules/@types"
     ],
@@ -21,8 +20,13 @@
       "es2015.iterable"
     ],
     "paths": {
-      "@components/*": ["app/components"],
-      "@services/*": ["app/services/"]
-    }
+      "@components/*": [
+        "app/components"
+      ],
+      "@services/*": [
+        "app/services/"
+      ]
+    },
+    "useDefineForClassFields": false
   }
 }

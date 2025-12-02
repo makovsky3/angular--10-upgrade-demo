@@ -3,9 +3,10 @@ import { Component, HostBinding } from '@angular/core';
 import { UpgradableComponent } from 'theme/components/upgradable';
 
 @Component({
-  selector: 'app-components',
-  templateUrl: './components.component.html',
-  styleUrls: ['./components.component.scss'],
+    selector: 'app-components',
+    templateUrl: './components.component.html',
+    styleUrls: ['./components.component.scss'],
+    standalone: false
 })
 export class ComponentsComponent extends UpgradableComponent {
   @HostBinding('class.mdl-grid') public readonly mdlGrid = true;

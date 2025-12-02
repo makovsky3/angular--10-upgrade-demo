@@ -4,8 +4,9 @@ import { Router } from '@angular/router';
 import { AuthService } from '@services/*';
 
 @Component({
-  selector: 'app-common-layout',
-  templateUrl: './common-layout.component.html',
+    selector: 'app-common-layout',
+    templateUrl: './common-layout.component.html',
+    standalone: false
 })
 export class CommonLayoutComponent implements OnInit {
 

@@ -3,9 +3,10 @@ import { Component, HostBinding } from '@angular/core';
 import { UpgradableComponent } from 'theme/components/upgradable';
 
 @Component({
-  selector: 'app-typography',
-  templateUrl: './typography.component.html',
-  styleUrls: ['./typography.component.scss'],
+    selector: 'app-typography',
+    templateUrl: './typography.component.html',
+    styleUrls: ['./typography.component.scss'],
+    standalone: false
 })
 export class TypographyComponent extends UpgradableComponent {
   @HostBinding('class.mdl-grid') public readonly mdlGrid = true;

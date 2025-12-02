@@ -3,10 +3,11 @@ import { Component, HostBinding, Input } from '@angular/core';
 import { UpgradableComponent } from 'theme/components/upgradable';
 
 @Component({
-  selector: 'base-right-sidebar-layout',
-  styleUrls: ['./right-sidebar.component.scss'],
-  template: `
+    selector: 'base-right-sidebar-layout',
+    styleUrls: ['./right-sidebar.component.scss'],
+    template: `
     <ng-content></ng-content>`,
+    standalone: false
 })
 export class RightSidebarLayoutComponent extends UpgradableComponent {
   @Input() public title;

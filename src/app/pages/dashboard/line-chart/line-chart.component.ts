@@ -1,5 +1,5 @@
-import * as d3 from 'd3';
-import * as nv from 'nvd3';
+declare const d3: any;
+declare const nv: any;
 
 import { Component, ElementRef, HostBinding, OnInit } from '@angular/core';
 
@@ -8,10 +8,11 @@ import { LineChartComponent as BaseLineChartComponent } from 'theme/components/l
 import { LineChartService } from './line-chart.service';
 
 @Component({
-  selector: 'app-line-chart',
-  styleUrls: ['../../../../theme/components/line-chart/line-chart.component.scss'],
-  template: ``,
-  providers: [LineChartService],
+    selector: 'app-line-chart',
+    styleUrls: ['../../../../theme/components/line-chart/line-chart.component.scss'],
+    template: ``,
+    providers: [LineChartService],
+    standalone: false
 })
 export class LineChartComponent extends BaseLineChartComponent {
   constructor(

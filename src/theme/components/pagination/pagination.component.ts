@@ -1,9 +1,10 @@
 import { Component, EventEmitter, HostBinding, Input, Output } from '@angular/core';
 
 @Component({
-  selector: 'base-pagination',
-  styleUrls: ['./pagination.component.scss'],
-  templateUrl: './pagination.component.html',
+    selector: 'base-pagination',
+    styleUrls: ['./pagination.component.scss'],
+    templateUrl: './pagination.component.html',
+    standalone: false
 })
 export class PaginationComponent {
   @HostBinding('class.pagination') private readonly pagination = true;

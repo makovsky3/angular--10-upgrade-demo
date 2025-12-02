@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule as NgFormsModule } from '@angular/forms';
-import { MaterialAngularSelectModule } from 'material-angular-select';
+// TODO: MaterialAngularSelectModule is not compatible with Angular 19 (Ivy)
+// import { MaterialAngularSelectModule } from 'material-angular-select';
 
 import { ThemeModule } from 'theme';
 
@@ -13,7 +14,7 @@ import { FormsComponent } from './forms.component';
     CommonModule,
     ThemeModule,
     NgFormsModule,
-    MaterialAngularSelectModule,
+    // MaterialAngularSelectModule, // Commented out - not compatible with Angular 19
   ],
   declarations: [
     FormsComponent,

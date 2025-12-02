@@ -1,10 +1,11 @@
-import * as d3 from 'd3';
-import * as nv from 'nvd3';
+declare const d3: any;
+declare const nv: any;
 
 import { Component, HostBinding } from '@angular/core';
 
 @Component({
-  template: '',
+    template: '',
+    standalone: false
 })
 export abstract class PieChartComponent {
   @HostBinding('class.pie-chart__container') private readonly pieChartContainer = true;

@@ -1,15 +1,16 @@
-import * as d3 from 'd3';
-import * as nv from 'nvd3';
+declare const d3: any;
+declare const nv: any;
 
 import { Component, ElementRef, HostBinding, OnInit } from '@angular/core';
 
 import { StackedBarChartService } from './stacked-bar-chart.service';
 
 @Component({
-  selector: 'app-stacked-bar-chart',
-  styleUrls: ['./stacked-bar-chart.component.scss'],
-  template: ``,
-  providers: [StackedBarChartService],
+    selector: 'app-stacked-bar-chart',
+    styleUrls: ['./stacked-bar-chart.component.scss'],
+    template: ``,
+    providers: [StackedBarChartService],
+    standalone: false
 })
 export class StackedBarChartComponent implements OnInit {
   @HostBinding('class.stacked-bar-chart__container') public readonly stackedBarChartContainer = true;

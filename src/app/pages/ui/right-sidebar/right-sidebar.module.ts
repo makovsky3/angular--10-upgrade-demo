@@ -2,7 +2,8 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { MaterialAngularSelectModule } from 'material-angular-select';
+// TODO: MaterialAngularSelectModule is not compatible with Angular 19 (Ivy)
+// import { MaterialAngularSelectModule } from 'material-angular-select';
 import { ThemeModule } from 'theme';
 
 import { FiltersComponent } from './filters/filters.component';
@@ -13,7 +14,7 @@ import { RightSidebarComponent } from './right-sidebar.component';
     CommonModule,
     ThemeModule,
     FormsModule,
-    MaterialAngularSelectModule,
+    // MaterialAngularSelectModule, // Commented out - not compatible with Angular 19
   ],
   declarations: [
     RightSidebarComponent,

@@ -1,4 +1,4 @@
-@import '~theme/helpers';
+@import 'theme/helpers';
 
 .badge--colored-green {
   @include colored-badge($color-green);

@@ -1,9 +1,10 @@
 import { Component, ElementRef, HostBinding, HostListener, Input, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'base-progress',
-  styleUrls: ['./progress.component.scss'],
-  template: ``,
+    selector: 'base-progress',
+    styleUrls: ['./progress.component.scss'],
+    template: ``,
+    standalone: false
 })
 export class ProgressComponent {
   private progressValue = 0;

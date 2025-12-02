@@ -3,9 +3,10 @@ import { Component, Input } from '@angular/core';
 import { SidebarComponent as BaseSidebarComponent } from 'theme/components/sidebar';
 
 @Component({
-  selector: 'app-sidebar',
-  styleUrls: ['../../../theme/components/sidebar/sidebar.component.scss', './sidebar.component.scss'],
-  templateUrl: '../../../theme/components/sidebar/sidebar.component.html',
+    selector: 'app-sidebar',
+    styleUrls: ['../../../theme/components/sidebar/sidebar.component.scss', './sidebar.component.scss'],
+    templateUrl: '../../../theme/components/sidebar/sidebar.component.html',
+    standalone: false
 })
 export class SidebarComponent extends BaseSidebarComponent {
   public title = 'darkboard';

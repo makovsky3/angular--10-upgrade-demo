@@ -14,10 +14,11 @@ import {
 import { TodoListService } from './todo-list.service';
 
 @Component({
-  selector: 'app-todo-list',
-  styleUrls: ['./todo-list.component.scss'],
-  templateUrl: './todo-list.component.html',
-  providers: [TodoListService],
+    selector: 'app-todo-list',
+    styleUrls: ['./todo-list.component.scss'],
+    templateUrl: './todo-list.component.html',
+    providers: [TodoListService],
+    standalone: false
 })
 export class TodoListComponent implements AfterViewInit, OnDestroy {
   @HostBinding('class.todo') public readonly todo = true;

@@ -1,9 +1,10 @@
 import { Component, HostBinding } from '@angular/core';
 
 @Component({
-  selector: 'app-table-card',
-  styleUrls: ['./table-card.component.scss'],
-  templateUrl: './table-card.component.html',
+    selector: 'app-table-card',
+    styleUrls: ['./table-card.component.scss'],
+    templateUrl: './table-card.component.html',
+    standalone: false
 })
 export class TableCardComponent {
   @HostBinding('class.projects-table') public readonly projectsTable = true;

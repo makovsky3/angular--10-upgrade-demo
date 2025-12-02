@@ -1,9 +1,10 @@
 import { Component, HostBinding } from '@angular/core';
 
 @Component({
-  selector: 'app-cotoneaster-card',
-  styleUrls: ['./cotoneaster-card.component.scss'],
-  templateUrl: './cotoneaster-card.component.html',
+    selector: 'app-cotoneaster-card',
+    styleUrls: ['./cotoneaster-card.component.scss'],
+    templateUrl: './cotoneaster-card.component.html',
+    standalone: false
 })
 export class CotoneasterCardComponent {
   @HostBinding('class.cotoneaster') public readonly cotoneaster = true;

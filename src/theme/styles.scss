@@ -1,6 +1,6 @@
 @import './helpers';
-@import '~nvd3/build/nv.d3.css';
-@import '~material-design-lite/src/material-design-lite.scss';
+@import '../../node_modules/nvd3/build/nv.d3.css';
+@import '../../node_modules/material-design-lite/src/material-design-lite.scss';
 @import './scss/material-angular-select';
 @import './scss/layout';
 @import './scss/chip';
@@ -31,6 +31,6 @@
 @import './components/progress/progress.component';
 @import './components/right-sidebar/sidebar/sidebar.component';
 @import './components/right-sidebar/right-sidebar.component';
-@import '/components/sidebar/sidebar.component';
-@import '/components/toggle/toggle.component';
-@import '/directives/tooltip/tooltip.component';
+@import '../app/components/sidebar/sidebar.component';
+@import './components/toggle/toggle.component';
+@import './directives/tooltip/tooltip.component';

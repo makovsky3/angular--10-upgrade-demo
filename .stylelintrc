@@ -37,6 +37,15 @@
         ]
       }
     ],
-    "no-descending-specificity": null
+    "selector-pseudo-element-no-unknown": [
+      true,
+      {
+        "ignorePseudoElements": [
+          "ng-deep"
+        ]
+      }
+    ],
+    "no-descending-specificity": null,
+    "block-closing-brace-empty-line-before": null
   }
 }

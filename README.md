@@ -1,14 +1,12 @@
 # Material Angular Dashboard
 
-Welcome to the first dark dashboard with Google Material Design and Angular!
+Welcome to the first dark dashboard with Google Material Design and Angular 19!
 
 <a target="_blank" href="http://material-angular-dashboard.creativeit.io/"><img src="https://trello-attachments.s3.amazonaws.com/55f8466d8f95075bca20dd66/5bf421455ab0f05102cadac9/eee32e50e9fc278b715442a3fc6f65aa/Readme.png"/></a>
 
-Its much more fun with the [demo](http://material-angular-dashboard.creativeit.io).
-
 Material admin template is absolutely free for commercial usage theme, based on Google Material Design guidelines.
 
-> **Important**: We are still working on the project and there will be much more awesome, check out our [issues](https://github.com/CreativeIT/material-angular-dashboard/issues) to see what features are coming soon.
+> **Note**: This is a modernized fork of the original [CreativeIT/material-angular-dashboard](https://github.com/CreativeIT/material-angular-dashboard). This version has been upgraded from Angular 10 to **Angular 19** with updated dependencies and build configuration.
 
 # SETUP and USAGE
 
@@ -40,11 +38,11 @@ Run `npm run build` or `ng build` to build the project. The build artifacts will
 
 # FEATURES
 
-* Angular
+* Angular 19
 
 * [Material Design](http://www.google.com/design/spec/material-design/introduction.html)
 
-* TypeScript
+* TypeScript 5.8
 
 * Responsive dark material design. DARK, Carl!
 
@@ -54,17 +52,18 @@ Run `npm run build` or `ng build` to build the project. The build artifacts will
 
 * [D3](https://d3js.org/) and [NVD3](http://nvd3.org/)
 
-* [ag-Grid](https://www.ag-grid.com)
-
-* [material-angular-select](https://github.com/CreativeIT/material-angular-select)
-
 * MIT License
 
 # Additional
 
 Since the project uses [BEM](http://getbem.com) structure with sass, it can be customized in an easy way by editing `src/theme/scss/_variables.scss` file.
 
-Project uses [d3](https://d3js.org/) and [nvd3](http://nvd3.org/) to build charts and chart components and [ag-Grid](https://www.ag-grid.com) to build advanced tables.
+Project uses [d3](https://d3js.org/) and [nvd3](http://nvd3.org/) to build charts and chart components.
+
+# Requirements
+
+* Node.js 18+ (required for Angular 19)
+* npm (package manager)
 
 # Quick start
 Do you want to start quickly and don't need all the pages and modules? You can checkout to empty 

@@ -1,30 +1,31 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 import { BlankLayoutCardComponent } from 'app/components/blank-layout-card';
 import { AuthService } from '../../../services/auth';
 
 @Component({
-  selector: 'app-login',
-  styleUrls: ['../../../components/blank-layout-card/blank-layout-card.component.scss'],
-  templateUrl: './login.component.html',
+    selector: 'app-login',
+    styleUrls: ['../../../components/blank-layout-card/blank-layout-card.component.scss'],
+    templateUrl: './login.component.html',
+    standalone: false
 })
 export class LoginComponent extends BlankLayoutCardComponent implements OnInit {
-  public loginForm: FormGroup;
+  public loginForm: UntypedFormGroup;
   public email;
   public password;
   public emailPattern = '^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$';
   public error: string;
 
   constructor(public authService: AuthService,
-              public fb: FormBuilder,
+              public fb: UntypedFormBuilder,
               public router: Router) {
     super();
 
     this.loginForm = this.fb.group({
-      password: new FormControl('', Validators.required),
-      email: new FormControl('', [
+      password: new UntypedFormControl('', Validators.required),
+      email: new UntypedFormControl('', [
         Validators.required,
         Validators.pattern(this.emailPattern),
         Validators.maxLength(20),

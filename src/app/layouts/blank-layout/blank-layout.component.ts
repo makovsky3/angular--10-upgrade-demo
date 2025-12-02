@@ -2,9 +2,10 @@ import { Component, HostBinding } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-blank-layout',
-  styleUrls: ['./blank-layout.component.scss'],
-  templateUrl: './blank-layout.component.html',
+    selector: 'app-blank-layout',
+    styleUrls: ['./blank-layout.component.scss'],
+    templateUrl: './blank-layout.component.html',
+    standalone: false
 })
 export class BlankLayoutComponent {
   // FIXME: responsibility leak

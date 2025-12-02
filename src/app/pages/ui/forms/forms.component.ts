@@ -3,9 +3,10 @@ import { AfterViewInit, Component, HostBinding } from '@angular/core';
 import { UpgradableComponent } from 'theme/components/upgradable';
 
 @Component({
-  selector: 'app-forms',
-  templateUrl: './forms.component.html',
-  styleUrls: ['./forms.component.scss'],
+    selector: 'app-forms',
+    templateUrl: './forms.component.html',
+    styleUrls: ['./forms.component.scss'],
+    standalone: false
 })
 export class FormsComponent extends UpgradableComponent {
   @HostBinding('class.mdl-grid') public readonly mdlGrid = true;
