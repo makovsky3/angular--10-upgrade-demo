@@ -2,7 +2,9 @@
 
 Welcome to the first dark dashboard with Google Material Design and Angular 19!
 
-<a target="_blank" href="http://material-angular-dashboard.creativeit.io/"><img src="https://trello-attachments.s3.amazonaws.com/55f8466d8f95075bca20dd66/5bf421455ab0f05102cadac9/eee32e50e9fc278b715442a3fc6f65aa/Readme.png"/></a>
+**Live Demo:** [https://live-dashboard-app-cejd0cga.devinapps.com](https://live-dashboard-app-cejd0cga.devinapps.com)
+
+<a target="_blank" href="https://live-dashboard-app-cejd0cga.devinapps.com"><img src="https://trello-attachments.s3.amazonaws.com/55f8466d8f95075bca20dd66/5bf421455ab0f05102cadac9/eee32e50e9fc278b715442a3fc6f65aa/Readme.png"/></a>
 
 Material admin template is absolutely free for commercial usage theme, based on Google Material Design guidelines.
 
